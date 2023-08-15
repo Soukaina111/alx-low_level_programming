@@ -12,7 +12,21 @@ void times_table(void)
 		for (multiplier = 0; multiplier <= 9; multiplier++)
 		{
 			product = multiplicand * multiplier;
-			printf("%d ", product);
+
+			if (product <= 9)
+			{
+				putchar(product + '0');
+			}
+			else
+			{
+				putchar((product / 10) + '0');
+				putchar((product % 10) + '0');
+			}
+
+			if (multiplier != 9)
+				putchar(',');
+			
+			putchar(' ');
 		}
 		putchar('\n');
 	}
