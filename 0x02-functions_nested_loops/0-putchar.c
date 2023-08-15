@@ -1,14 +1,21 @@
-#include <unistd.h>
-
+#include <stdio.h>
 
 /**
- * putchar - Writes a character to the standard output
- * @c: The character to be written
+ * main - Entry point of the program
  *
- * Return: On success, returns the character written as an unsigned char
- *         cast to an int. On error, returns -1.
+ * Return: Always 0 (Success)
  */
-int putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	char string[] = "_putchar";
+	int length = sizeof(string) - 1;
+
+	for (int i = 0; i < length; i++)
+	{
+		putchar(string[i]);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
