@@ -24,10 +24,14 @@ void times_table(void)
 			}
 
 			if (multiplier != 9)
+			{
 				putchar(',');
-			
-			putchar(' ');
+				putchar('\t');
+			}
+			else
+			{
+				putchar('\n');
+			}
 		}
-		putchar('\n');
 	}
 }
