@@ -6,20 +6,19 @@
 void print_alphabet_x10(void)
 {
     int count = 0;
-    char letter;
+    char letter = 'a';
 
     while (count < 10)
     {
-        letter = 'a';
-
         while (letter <= 'z')
         {
-            _putchar(letter);
+            putchar(letter);
             letter++;
         }
 
         count++;
+        letter = 'a'; // Reset letter to 'a' for the next iteration
     }
 
-    _putchar('\n');
+    putchar('\n');
 }
