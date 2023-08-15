@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
         }
 
         count++;
-        letter = 'a'; // Reset letter to 'a' for the next iteration
+        letter = 'a';/* Reset letter to 'a' for the next iteration */
     }
 
     putchar('\n');
