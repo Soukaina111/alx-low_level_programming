@@ -1,15 +1,9 @@
-#include <stdio.h>
+#include <unistd.h>
 
-int _putchar(char c){
-    putchar('_');
-    putchar('p');
-    putchar('u');
-    putchar('t');
-    putchar('c');
-    putchar('h');
-    putchar('a');
-    putchar('r');
-    putchar('\n');
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
   
     return (0);
 }
