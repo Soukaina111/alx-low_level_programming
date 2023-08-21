@@ -8,25 +8,25 @@
  */
 void puts_half(char *str)
 {
-    int length = strlen(str);
-    int start_index;
-    int i;
+int length = strlen(str);
+int start_index
+int i;
 
-    if (length % 2 == 0)
-    {
-        start_index = length / 2;
-    }
-    else
-    {
-        start_index = (length - 1) / 2;
-    }
+if (length % 2 == 0)
+{
+start_index = length / 2;
+}
+else
+{
+start_index = (length - 1) / 2;
+}
 
-    i = start_index;
-    while (str[i] != '\0')
-    {
-        printf("%c", str[i]);
-        i++;
-    }
+i = start_index;
+while (str[i] != '\0')
+{
+printf("%c", str[i]);
+i++;
+}
 
-    printf("\n");
+printf("\n");
 }
