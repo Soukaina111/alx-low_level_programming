@@ -20,21 +20,3 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
-
-int main(void)
-{
-	char buffer[10];
-	char *result = _memset(buffer, 'A', 10);
-
-	putchar('\n');
-
-	char *p = result;
-	while (*p != '\0')
-	{
-		putchar(*p);
-		p++;
-	}
-
-	putchar('\n');
-	return (0);
-}
