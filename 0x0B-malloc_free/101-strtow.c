@@ -47,7 +47,7 @@ char **strtow(char *str)
 		return (NULL);
 
 	so = (char **) malloc(sizeof(char *) * (words + 1));
-	if (so== NULL)
+	if (so == NULL)
 		return (NULL);
 
 	for (i = 0; i <= len; i++)
