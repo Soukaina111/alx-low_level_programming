@@ -21,9 +21,9 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 		else
-		{		
+			
 		decimal_equivalent = 2 * decimal_equivalent + (b[i] - '0');
-		}
+
 	}
 
 
