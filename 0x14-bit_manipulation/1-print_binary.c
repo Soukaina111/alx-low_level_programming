@@ -15,13 +15,13 @@ void print_binary(unsigned long int n)
 
 		if (dec & 1)
 		{
-			putchar('1');
+			_putchar('1');
 			count++;
 		}
 		else if (count)
-			putchar('0');
+			_putchar('0');
 	}
 	if (!count)
-		putchar('0');
+		_putchar('0');
 }
 
