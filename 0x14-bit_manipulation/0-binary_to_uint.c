@@ -17,14 +17,14 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; b[i]; i++)
 	{
 		if (b[i] < '0' || b[i] > '1')
-		
-			return (0);		
-		else
-				
+			return (0);
 		decimal_equivalent = 2 * decimal_equivalent + (b[i] - '0');
-
 	}
-
 
 	return (decimal_equivalent);
 }
+
+
+
+
+
