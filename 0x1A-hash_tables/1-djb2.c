@@ -1,4 +1,3 @@
-#include "hash_tables.h"
 /**
  * hash_djb2 - takes a string and returnsan index number
  * @str: the string to be transformed to index
