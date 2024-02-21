@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" A FUNCTION that calculates  the perimeter of an island in shape of a grid"""
+""" A FUNCTION that calculates
+the perimeter of an island in shape of a grid"""
+
 
 def island_perimeter(grid):
     """shows the perimeter of the island
