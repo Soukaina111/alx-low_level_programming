@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ A FUNCTION that calculates  the perimeter of an island in shape of a grid"""
+
 def island_perimeter(grid):
     """ this function:
                     Args: grid, a list of list of integers
@@ -27,7 +28,7 @@ def island_perimeter(grid):
                         return 4
                     elif (itera == 3):
                         peri = peri + 3
-                    elif (itera== 2):
+                    elif (itera i == 2):
                         peri = peri + 2
                     elif (itera == 1):
                         peri = peri + 1
