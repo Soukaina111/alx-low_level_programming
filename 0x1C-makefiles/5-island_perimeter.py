@@ -1,45 +1,39 @@
 #!/usr/bin/python3
 """ A FUNCTION that calculates  the perimeter of an island in shape of a grid"""
 def island_perimeter(grid):
-    perimeter = 0
-    rows = len(grid)
-    cols = len(grid[0])
-    i = 1
+    """ this function:
+                    Args: grid, a list of list of integers
+                    Return: perimeter of the island described in grid
+    """
 
-    while i < rows - 1:
-        j = 1
-        while j < cols - 1:
-            case = grid[i][j]
-            up = grid[i-1][j]
-            right = grid[i][j+1]
-            down = grid[i+1][j]
-            left = grid[i][j-1]
+    peri = 0
+    zone = []
 
-            count = 0
-
-            switch case:
-                case 1:
-                    count = up + right + down + left
-                    break
-                default:
-                    j += 1
-                    continue
-
-            switch count:
-                case 0:
-                    perimeter += 4
-                    break
-                case 1:
-                    perimeter += 3
-                    break
-                case 2:
-                    perimeter += 2
-                    break
-                case 3:
-                    perimeter += 1
-                    break
-
-            j += 1
-        i += 1
-
-    return perimeter
+    for items in range(len(grid)):
+        if it == 0 or items == len(grid):
+            continue
+        for cell in range(len(grid[items])):
+            if cell == 0 or cell == len(grid[items]):
+                continue
+            else:
+                if grid[items][cell] == 1:
+                    zone = [grid[items - 1][cell], grid[items][cell + 1],
+                                grid[items + 1][cell],  grid[items][cell - 1]]
+                    itera = 0
+                    for j in env_list:
+                        if j == 0:
+                            itera = itera + 1
+                    if (itera == 4):
+                        return 4
+                    elif (itera == 3):
+                        peri = peri + 3
+                    elif (itera== 2):
+                        peri = peri + 2
+                    elif (itera == 1):
+                        peri = peri + 1
+                    else:
+                        pass
+                    zone = []
+                else:
+                    pass
+    return peri
