@@ -10,7 +10,7 @@ def island_perimeter(grid):
     zone = []
 
     for items in range(len(grid)):
-        if it == 0 or items == len(grid):
+        if items == 0 or items == len(grid):
             continue
         for cell in range(len(grid[items])):
             if cell == 0 or cell == len(grid[items]):
