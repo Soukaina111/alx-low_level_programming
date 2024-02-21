@@ -20,7 +20,7 @@ def island_perimeter(grid):
                     zone = [grid[items - 1][cell], grid[items][cell + 1],
                                 grid[items + 1][cell],  grid[items][cell - 1]]
                     itera = 0
-                    for j in env_list:
+                    for j in zone:
                         if j == 0:
                             itera = itera + 1
                     if (itera == 4):
