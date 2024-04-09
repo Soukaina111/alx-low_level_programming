@@ -28,9 +28,9 @@ int binary_search(int *array, size_t size, int value)
 		for (i = gauche; i <= droit; i++)
 		{
 			printf("%d ", array[i]);
-			 if (i != droit)
-			 {
-                		printf(", ");
+			if (i != droit)
+			{
+				 printf(", ");
 
 			}
 		}
