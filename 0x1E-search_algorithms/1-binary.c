@@ -12,10 +12,10 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-    int gauche = 0;
-    int droit = size - 1;
-    int half;
-    int i;
+    size_t gauche = 0;
+    size_t droit = size - 1;
+    size_t half;
+    size_t i;
 
     if (array == NULL)
     {
