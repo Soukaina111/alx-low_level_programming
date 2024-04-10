@@ -2,7 +2,11 @@
 #include "search_algos.h"
 
 /**
-  * _binary_search - Searches for a value in a sorted array
+  * binary_search2 - Searches for a value in a sorted array
+  * @array: A pointer to the first element of the array to search.
+  * @ga:The starting index of the [sub]array to search.
+  * @dr: The ending index of the [sub]array to search.
+  * @value: The value to search for.
   * Return: If the value is not present or the array is NULL, -1.
   * Description: Prints the [sub]array being searched after each change.
   */
@@ -34,6 +38,9 @@ int binary_search2(int *array, size_t ga, size_t dr, int value)
 
 /**
   * exponential_search - This function Searches for a value in a sorted array
+  * @array: A pointer to the first element of the array to search.
+  * @size: The number of elements in the array.
+  * @value: The value to search for.
   * Return: If the value is not present or the array is NULL, -1.
   */
 int exponential_search(int *array, size_t size, int value)
